@@ -14,21 +14,34 @@ class App extends React.Component {
     this.state = {
       movies: [],
       moviesWillWatch: [],
-      sort_by: "popularity.desc"
+      sort_by: "revenue.desc"
     };
   }
 
   componentDidMount() {
-    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`).then((response) => {
-      console.log("then");
+    this.getMovies();
+  }
+
+  componentDidUpdate(pervProps, prevState) {
+    console.log("didUpdate");
+    console.log("prev", pervProps, prevState);
+    console.log("this", this.props, this.state);
+    if (prevState.sort_by !== this.state.sort_by) {
+      console.log("call api");
+      this.getMovies();
+    }
+  }
+
+  getMovies = () => {
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`)
+      .then((response) => {
       return response.json()
     }).then((data) => {
       console.log("data", data)
       this.setState({
         movies: data.results
-      })
-    })
-    // console.log("after fetch");
+      });
+    });
   }
 
   deleteMovie = movie => {
@@ -68,7 +81,7 @@ class App extends React.Component {
   };
 
   render() {
-    console.log("render", this);
+    console.log("render", this.state.sort_by);
     return (
       <div className="container">
         <div className="row mt-4">
