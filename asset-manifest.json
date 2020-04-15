@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-Warrior/static/css/main.5d937b94.chunk.css",
+    "main.js": "/React-Warrior/static/js/main.2c7787ec.chunk.js",
+    "main.js.map": "/React-Warrior/static/js/main.2c7787ec.chunk.js.map",
+    "runtime-main.js": "/React-Warrior/static/js/runtime-main.a345b2f5.js",
+    "runtime-main.js.map": "/React-Warrior/static/js/runtime-main.a345b2f5.js.map",
+    "static/css/2.de424728.chunk.css": "/React-Warrior/static/css/2.de424728.chunk.css",
+    "static/js/2.f237ea5f.chunk.js": "/React-Warrior/static/js/2.f237ea5f.chunk.js",
+    "static/js/2.f237ea5f.chunk.js.map": "/React-Warrior/static/js/2.f237ea5f.chunk.js.map",
+    "index.html": "/React-Warrior/index.html",
+    "precache-manifest.b25c5a1f4be6d5181af34fa80eb50bd0.js": "/React-Warrior/precache-manifest.b25c5a1f4be6d5181af34fa80eb50bd0.js",
+    "service-worker.js": "/React-Warrior/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/React-Warrior/static/css/2.de424728.chunk.css.map",
+    "static/css/main.5d937b94.chunk.css.map": "/React-Warrior/static/css/main.5d937b94.chunk.css.map",
+    "static/js/2.f237ea5f.chunk.js.LICENSE.txt": "/React-Warrior/static/js/2.f237ea5f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a345b2f5.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.f237ea5f.chunk.js",
+    "static/css/main.5d937b94.chunk.css",
+    "static/js/main.2c7787ec.chunk.js"
+  ]
+}
